@@ -43,13 +43,9 @@ public class Adapter extends BaseAdapter {
 
         TextView tvNIM = view.findViewById(R.id.tv_nim);
         TextView tvNama = view.findViewById(R.id.tv_nama);
-        TextView tvJurusan = view.findViewById(R.id.tv_jurusan);
-        TextView tvAngkatan = view.findViewById(R.id.tv_angkatan);
 
         tvNIM.setText(mahasiswa.getNim());
         tvNama.setText(mahasiswa.getNama());
-        tvJurusan.setText(mahasiswa.getJurusan());
-        tvAngkatan.setText(String.valueOf(mahasiswa.getAngkatan()));
 
         return view;
     }
